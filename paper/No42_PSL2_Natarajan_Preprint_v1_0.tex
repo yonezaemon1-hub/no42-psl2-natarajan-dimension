@@ -1,0 +1,333 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,enumitem}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Exact Natarajan Dimension of the Natural PSL(2,q) Action},pdfauthor={Ryutaro Yonezu}}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Natarajan dimension of the natural $\mathrm{PSL}(2,q)$ action}
+\rhead{\small No.42 / v1.0}
+\cfoot{\thepage}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\DeclareMathOperator{\PSL}{PSL}
+\DeclareMathOperator{\PGL}{PGL}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Ndim}{Ndim}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\PP}{\mathbb{P}}
+\setlist{nosep}
+\title{\vspace{-12mm}\Large\bfseries Exact Natarajan Dimension of the\protect\\ Natural $\mathrm{PSL}(2,q)$ Action}
+\author{Ryutaro Yonezu\\\small Yonezu Research Lab\\\small\texttt{yonezaemon1+research@gmail.com}}
+\date{\small Research No.42 --- Version 1.0 --- 27 October 2026}
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+Let $\mathcal H_q$ be the class of permutations of $\PP^1(\F_q)$ induced by
+the natural action of $\PSL(2,q)$, where $q$ ranges over prime powers. We give
+an elementary proof that its Natarajan dimension is $1$ for $q=2$, is $2$
+for $q\in\{3,4,5,7,11\}$, and is $3$ for every other prime power.
+For odd $q$, a normalized three-dimensional Natarajan cube is characterized
+by quadratic-character conditions. When $q\equiv1\pmod4$, a four-cycle in
+a nonneighbor-induced Paley graph supplies a cube; when $q\equiv3\pmod4$,
+cube existence is equivalent to a transitive five-vertex Paley subtournament.
+The proof covers all finite fields, with finite computations supplied as
+checks. The ingredients and several small cases are known. Novelty of the
+exact all-$q$ classification has not been established; no priority claim is made.
+\end{abstract}
+\noindent\textbf{Status.} Unreviewed preprint. AI-assisted preparation and rechecking do not
+constitute independent third-party review or human peer review.
+
+\section{Model, scope, and result}
+Put $\Omega_q=\PP^1(\F_q)=\F_q\cup\{\infty\}$ and
+$\mathcal H_q=\{x\mapsto gx:g\in\PSL(2,q)\}$ on its full domain.
+An invertible matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts as
+$x\mapsto (ax+b)/(cx+d)$, with the usual conventions at poles and at infinity.
+It represents an element of $\PSL(2,q)$ precisely when its determinant is a
+nonzero square. This follows by rescaling it to determinant one. In even
+characteristic every nonzero element is a square, so $\PSL(2,q)=\PGL(2,q)$.
+
+A set of distinct points $x_1,\ldots,x_m$ is \emph{Natarajan-shattered} if
+there are labels $u_i\ne v_i$ such that every choice from
+$\prod_{i=1}^m\{u_i,v_i\}$ is realized by a member of $\mathcal H_q$.
+Let $N(q)=\Ndim(\mathcal H_q)$ be the maximum possible $m$.
+This is the standard multiclass dimension, not a new definition.
+
+\begin{theorem}\label{thm:main}
+For every prime power $q$,
+\[
+N(q)=\begin{cases}
+1,&q=2,\\
+2,&q\in\{3,4,5,7,11\},\\
+3,&\text{every other prime power }q.
+\end{cases}
+\]
+\end{theorem}
+
+The statement concerns this specific action of degree $q+1$, not all actions
+of the abstract group. For example, $\PSL(2,4)$ and $\PSL(2,5)$ are both
+isomorphic to $A_5$, but act here on five and six points, respectively.
+The result does not assert improved ARC scores or certification of an
+unrestricted ARC task's intended rule.
+
+\Needspace{10\baselineskip}
+\section{Elementary reductions}
+\begin{lemma}\label{lem:labels}
+For a class of injective maps, the output pairs of a Natarajan-shattered
+set are pairwise disjoint. Thus shattering $m$ inputs requires at least $2m$ labels.
+\end{lemma}
+\begin{proof}
+If two different inputs had a common available label, the pattern selecting
+that label at both would not be injective. Within a single pair the labels
+are different by definition.
+\end{proof}
+
+\begin{lemma}\label{lem:bounds}
+For all $q$, $N(q)\le3$. For $q\ge3$, $N(q)\ge2$.
+\end{lemma}
+\begin{proof}
+Two projective linear transformations agreeing at three distinct points
+are identical. A shattered four-set would give two realizers agreeing at
+three inputs and disagreeing at the fourth, a contradiction.
+
+The natural $\PSL(2,q)$ action is doubly transitive. Indeed, translations
+and $x\mapsto-1/x$ are represented by determinant-one matrices and make
+the action transitive; the stabilizer of infinity contains all translations,
+which are transitive on the remaining points. For $q\ge3$ there are at least
+four labels. Choose two disjoint output pairs; double transitivity realizes
+all four choices on two fixed inputs.
+\end{proof}
+
+For $q=2$, Lemma~\ref{lem:labels} excludes dimension two, and a moved point
+gives dimension one. For $q=3,4$, there are fewer than six labels, so the two
+lemmas give dimension two. In particular, $q=3$ already has four projective
+points and is covered by the lower-bound argument without an extra exception.
+
+\section{A normalized cube criterion for odd \texorpdfstring{$q$}{q}}\label{sec:criterion}
+Assume $q$ is odd. Any shattered triple can be normalized so that the inputs
+are $(\infty,0,1)$ and one output at each input equals that input.
+First compose all realizers on the left by the inverse of the all-zero
+realizer. Then conjugate the whole action by the unique $\PGL(2,q)$ map
+sending the three inputs to $(\infty,0,1)$. Such conjugation preserves
+$\PSL(2,q)$: it is the kernel of the determinant-square-class homomorphism
+on $\PGL(2,q)$.
+
+Lemma~\ref{lem:labels} now makes the output pairs
+\[
+\{\infty,a\},\qquad\{0,b\},\qquad\{1,c\},
+\]
+where $a,b,c,0,1$ are five distinct finite elements. Let $\chi$ denote the
+quadratic character of $\F_q$, extended by $\chi(0)=0$.
+
+\begin{proposition}\label{prop:criterion}
+These pairs form a Natarajan cube exactly when
+\begin{align}
+\chi(c)=\chi(1-b)=\chi(c-b)&=1,\label{eq:cross}\\
+\chi(a)=\chi(a-1)=\chi(a-b)&=\chi(a-c).\label{eq:uniform}
+\end{align}
+\end{proposition}
+\begin{proof}
+The projective map sending $(\infty,0,1)$ to $(\infty,y,z)$ is
+$x\mapsto(z-y)x+y$. Its determinant is $z-y$, so membership in $\PSL(2,q)$
+is equivalent to $\chi(z-y)=1$. For $y\in\{0,b\}$ and $z\in\{1,c\}$,
+the four conditions are exactly \eqref{eq:cross}, together with $\chi(1)=1$.
+
+The unique projective map sending $(\infty,0,1)$ to $(a,y,z)$ is represented by
+\[
+\begin{pmatrix}
+a(z-y)&y(a-z)\\
+z-y&a-z
+\end{pmatrix}.
+\]
+Its determinant is $(a-y)(a-z)(z-y)$. All factors are nonzero. Under
+\eqref{eq:cross}, its square class is positive exactly when
+$\chi(a-y)=\chi(a-z)$. Taking all four choices of $y,z$ gives
+\eqref{eq:uniform}. Thus all eight patterns are accounted for in both directions.
+\end{proof}
+
+The triple-character invariant behind this calculation is known; see
+Kr\v{c}adinac, Pav\v{c}evi\'{c}, and Tabak~\cite[Lemma~2.2]{kpt}.
+We do not claim that invariant or the determinant-square test as new.
+
+\section{Character sums and the case \texorpdfstring{$q\equiv1\pmod4$}{q = 1 (mod 4)}}
+We use the standard identities
+\begin{equation}\label{eq:sums}
+\sum_{x\in\F_q}\chi(x)=0,\qquad
+\sum_{x\in\F_q}\chi(x)\chi(x-t)=-1\quad(t\ne0).
+\end{equation}
+For completeness, scale to $t=1$ in the second sum. The number of pairs
+$(x,y)$ with $y^2=x(x-1)$ is $q$ plus that sum. Put $U=2x-1$, $V=2y$;
+the equation becomes $(U-V)(U+V)=1$. The choices $(U-V,U+V)=(r,r^{-1})$
+for $r\ne0$ give exactly $q-1$ solutions, proving the identity. The first
+sum follows by multiplication by a nonsquare. Also $\chi(-1)=1$ precisely
+when $q\equiv1\pmod4$.
+
+Make the Paley graph on $\F_q$ by joining $x,y$ when $\chi(y-x)=1$.
+For $q\equiv1\pmod4$ this is an undirected graph. Let
+$S=\{x:\chi(x)=-1\}$, the nonneighbors of zero. Its size is
+$m=(q-1)/2$. The induced graph on $S$ is $k$-regular with $k=(q-1)/4$.
+To check the degree directly, fix $x\in S$ and expand
+\[
+\frac14\sum_{y\in\F_q}(1-\chi(y))(1+\chi(y-x)).
+\]
+Equation~\eqref{eq:sums} gives $(q+1)/4$. The $y=0$ term is zero, while
+the $y=x$ term is $1/2$ and must be removed. The actual degree is $(q-1)/4$.
+
+If $q\ge13$, then $k\ge3$ and $m=2k$. A $C_4$-free graph has at most one
+common neighbor for each pair of vertices. Counting two-edge paths gives
+\[
+m\binom{k}{2}\le\binom{m}{2},\qquad k(k-1)\le2k-1,
+\]
+which is impossible for integer $k\ge3$. Thus the induced graph contains
+a four-cycle, not necessarily an induced cycle. For $q=9$, it is a
+two-regular simple graph on four vertices, so it too is a four-cycle.
+
+Write the cycle's bipartition as $\{u,u'\}$ and $\{v,v'\}$. All four cross
+edges are present. The affine map $h(t)=(t-u)/(v-u)$ has a square multiplier.
+Set $a=h(0)$, $b=h(u')$, $c=h(v')$. The cross edges give
+\eqref{eq:cross}, and the common nonadjacency to zero gives
+\eqref{eq:uniform} with common value $-1$. The five finite elements are
+distinct. Proposition~\ref{prop:criterion} gives $N(q)=3$ for all
+$q\equiv1\pmod4$ with $q\ge9$.
+
+For $q=5$, any $a$ has only two other elements with $\chi(a-x)=1$ and two
+with value $-1$. Four distinct elements cannot all have the same value as
+required by \eqref{eq:uniform}. Hence $N(5)=2$.
+
+\section{The case \texorpdfstring{$q\equiv3\pmod4$}{q = 3 (mod 4)}}
+Make the Paley tournament with arc $x\to y$ when $\chi(y-x)=1$.
+Equations~\eqref{eq:cross}--\eqref{eq:uniform} are equivalent to existence
+of a transitive five-vertex subtournament.
+
+For the forward implication, all four cross arcs run from $\{0,b\}$ to
+$\{1,c\}$. Each pair has an internal order, making the four vertices
+transitive. Equation~\eqref{eq:uniform} makes $a$ a common source or sink,
+giving a transitive five-set.
+
+Conversely, order a transitive five-set as $t_1\to t_2\to t_3\to t_4\to t_5$,
+with every arc pointing forward. Take $a_0=t_5$, $\{u,u'\}=\{t_1,t_2\}$,
+and $\{v,v'\}=\{t_3,t_4\}$. The map $h(t)=(t-u)/(v-u)$ has square
+multiplier. Then $a=h(a_0)$, $b=h(u')$, $c=h(v')$ satisfy
+\eqref{eq:cross} and \eqref{eq:uniform}; the last vertex is a common sink.
+
+Every pair of Paley tournament vertices has exactly $(q-3)/4$ common
+outneighbors. To see this, expand the two positive-character indicators
+and use \eqref{eq:sums}. The sum before deleting the two endpoints is
+$(q-1)/4$; the endpoint contributions add to $1/2$, since $\chi(-1)=-1$.
+The result is $(q-3)/4$, independently of the arc direction.
+
+For $q=7,11$, that number is respectively one and two. The first two
+vertices of a transitive five-set would have three common outneighbors,
+which is impossible. Thus $N(7)=N(11)=2$.
+
+For $q\ge19$ in this congruence class, fix any arc $u\to v$.
+Its common outneighbor set has at least four vertices. Every tournament
+on four vertices has a transitive triple: a vertex has at least two
+outneighbors, and those two have an arc between them. Such a triple,
+together with $u,v$, gives a transitive five-set. Thus $N(q)=3$.
+
+The only prime powers congruent to three modulo four below nineteen are
+$3,7,11$; the next is $19$, since $15$ is not a prime power.
+The small cases have already been handled. These tournament properties
+are standard finite combinatorics; related Paley subtournament calculations
+appear in Momihara and Suda~\cite{ms}.
+
+\section{Even characteristic and completion of the proof}
+For even $q$, squaring permutes $\F_q^*$, so $\PSL(2,q)=\PGL(2,q)$.
+The latter group is sharply triply transitive on $\PP^1(\F_q)$: every
+ordered triple of distinct points has a unique projective map to any
+other such triple. If $q\ge8$, select three disjoint output pairs.
+Every one of their eight choices is a distinct ordered triple and is
+therefore realized. Hence $N(q)=3$. The smaller even fields $q=2,4$
+were handled in Section~2. This proves Theorem~\ref{thm:main} for every prime power.
+
+\section{Finite verification}
+The included standard-library Python verifiers require no network access,
+GPU, model API, or paid service. The first constructs finite fields from
+irreducible polynomials, enumerates the natural projective action, and
+compares cube membership directly with the character criterion.
+It checks the fifteen fields
+\[
+2,3,4,5,7,8,9,11,13,16,17,19,23,25,27.
+\]
+There are $43\,290$ normalized candidate triples in this sweep. A separate
+prime-field implementation uses determinant-one matrices and integer
+modular arithmetic for $q=2,3,5,7,11,13,17,19,23$. Counts and hashes of
+the full normalized cube sets agree. For example, the counts are $120$
+for $q=8$ and $2\,184$ for $q=16$.
+
+These two implementations share the mathematical normalization argument;
+they are not independent third-party validations. A user-supplied report
+of AI rechecking in another session of the same workflow found no defects
+and reported additional calculations without normalization. The associated
+custom code and raw logs have not been supplied; that report is not counted
+as a reproducible third implementation in this release.
+The general proof, rather than extrapolation from this finite sweep,
+establishes the all-field claim.
+
+\section{Prior work and limits}
+Li~\cite{li} studies learning group elements and Natarajan cubes; several
+small cases overlap the present calculation. The known general bounds do
+not by themselves give the displayed exception table. No exact all-$q$
+classification was located in the checked text and submitted source, but
+the reported additional search data were unavailable. This is a limited
+literature comparison, not a proof of novelty or priority.
+
+Height, relational complexity, and base size are established invariants
+\cite{gls,hudson}; linear dimension of a group action is another, different
+quantity~\cite{devillers}. The determinant test, character identities,
+Paley structures, and sharp triple transitivity are known ingredients.
+For even $q$ the result is an immediate consequence of sharp triple
+transitivity and label counting. The point of the note is an explicit
+all-field classification for the stated natural action, especially the
+odd-characteristic cube criterion and its exceptions, subject to the
+unresolved prior-art qualifications.
+
+\noindent\textbf{Disclosure and rights.} AI tools assisted literature checking,
+proof drafting, code, and presentation. Checks in this workflow are not
+third-party certification. References remain partially checked and novelty
+remains inconclusive. Copyright \textcopyright\ 2026 Ryutaro Yonezu.
+All rights reserved.
+
+\medskip
+\noindent\textbf{Research materials:}\par\nobreak
+\noindent{\footnotesize\url{https://github.com/yonezaemon1-hub/no42-psl2-natarajan-dimension}}.
+
+\begin{thebibliography}{9}\small
+\bibitem{li} X.~Li.
+\emph{Learning a Group Element from Its Action: Galois Correspondences,
+Optimal ERM, and an Abel--Ruffini Threshold for the Natarajan Dimension}.
+arXiv:2610.18154v1, 2026. \url{https://arxiv.org/abs/2610.18154}.
+
+\bibitem{kpt} V.~Kr\v{c}adinac, M.~O.~Pav\v{c}evi\'{c}, and K.~Tabak.
+Three-dimensional Hadamard matrices of Paley type.
+\emph{Finite Fields and Their Applications} 92 (2023), 102306.
+\url{https://doi.org/10.1016/j.ffa.2023.102306}.
+
+\bibitem{ms} K.~Momihara and S.~Suda.
+\emph{Upper bounds on the size of transitive subtournaments in digraphs}.
+arXiv:1605.02469, 2016. \url{https://arxiv.org/abs/1605.02469}.
+
+\bibitem{gls} N.~Gill, B.~Lod\`a, and P.~Spiga.
+On the height and relational complexity of a finite permutation group.
+\emph{Nagoya Mathematical Journal} 246 (2022), 372--411.
+\url{https://doi.org/10.1017/nmj.2021.6}.
+
+\bibitem{hudson} S.~Hudson.
+\emph{A Paper on Calculating the Height and Relational Complexity of the
+Primitive Actions of $\PSL_2(q)$ and $\PGL_2(q)$}.
+arXiv:2607.20295v1, 2026. \url{https://arxiv.org/abs/2607.20295}.
+
+\bibitem{devillers} A.~Devillers, M.~Giudici, D.~R.~Hawtin, L.~Klawuhn,
+and L.~Morgan. \emph{Linear dimension of group actions}.
+arXiv:2512.16079v1, 2025. \url{https://arxiv.org/abs/2512.16079}.
+\end{thebibliography}
+\end{document}

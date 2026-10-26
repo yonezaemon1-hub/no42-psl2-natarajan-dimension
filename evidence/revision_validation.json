@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "date_japan": "2026-10-27",
+  "python_version": "3.12.14",
+  "platform_system": "Linux",
+  "computation_functions_and_classes_ast_unchanged": "PASS",
+  "original_two_evidence_files_byte_identical": "PASS",
+  "default_cli_verify_15_fields": "PASS",
+  "default_cli_independent_9_primes": "PASS",
+  "default_cli_output_outside_package": "PASS",
+  "all_packaged_files_unchanged_by_reproduction": "PASS",
+  "fresh_outputs_byte_equal_packaged_evidence": "PASS",
+  "external_nonnormalized_search": "USER_REPORTED_NOT_RERUN_WITHOUT_REVIEWER_CODE",
+  "windows_reproduction": "NOT_PERFORMED"
+}

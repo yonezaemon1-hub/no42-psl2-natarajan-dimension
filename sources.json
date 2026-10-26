@@ -1,0 +1,144 @@
+{
+  "accessed_date_japan": "2026-10-26",
+  "coverage": "PARTIAL; primary sources used; not a complete novelty review",
+  "sources": [
+    {
+      "id": "LI2026",
+      "title": "Learning a Group Element from Its Action: Galois Correspondences, Optimal ERM, and an Abel–Ruffini Threshold for the Natarajan Dimension",
+      "authors": [
+        "Xiaoyu Li"
+      ],
+      "identifier": "arXiv:2610.18154v1",
+      "date": "2026-10-13",
+      "url": "https://arxiv.org/html/2610.18154v1",
+      "checked": [
+        "Sections 3, 6, 9; Appendix F; relevant examples and searches in the full HTML",
+        "Official arXiv v1 source archive; 32 file inventory; relevant TeX sections and full-source term searches",
+        "Re-read entire 3d_natarajan.tex and app_d_natarajan.tex for the all-q classification and direct-corollary comparison"
+      ],
+      "not_claimed": "No execution of the reported search scripts or complete per-action comparison: no standalone scripts or results dataset in the inspected submitted archive"
+    },
+    {
+      "id": "KPT2023",
+      "title": "Three-dimensional Hadamard matrices of Paley type",
+      "authors": [
+        "Vedran Krčadinac",
+        "Mario Osvin Pavčević",
+        "Kristijan Tabak"
+      ],
+      "identifier": "arXiv:2305.12415v2",
+      "doi": "10.1016/j.ffa.2023.102306",
+      "url": "https://arxiv.org/html/2305.12415v2",
+      "checked": [
+        "Section 2, especially Lemma 2.2: known triple-character invariance under PSL"
+      ]
+    },
+    {
+      "id": "MS2016",
+      "title": "Upper bounds on the size of transitive subtournaments in digraphs",
+      "authors": [
+        "Koji Momihara",
+        "Sho Suda"
+      ],
+      "identifier": "arXiv:1605.02469",
+      "url": "https://arxiv.org/abs/1605.02469",
+      "checked": [
+        "Abstract and PDF Table 2; reported small Paley tournament values"
+      ],
+      "not_claimed": "No complete audit of all spectral and intersection-polynomial bounds"
+    },
+    {
+      "id": "GK1992_1995",
+      "title": "On the Complexity of Teaching",
+      "authors": [
+        "Sally A. Goldman",
+        "Michael J. Kearns"
+      ],
+      "identifier": "WUCS-92-28; JCSS 50(1), 1995, 20–31",
+      "doi": "10.1006/jcss.1995.1003",
+      "url": "https://repository.library.washu.edu/cse_research/591/",
+      "checked": [
+        "Institutional repository abstract and bibliographic record"
+      ],
+      "not_claimed": "Full paper was not read"
+    },
+    {
+      "id": "FEI2026",
+      "title": "How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks",
+      "authors": [
+        "Yanlin Fei",
+        "et al."
+      ],
+      "identifier": "arXiv:2608.14905v3",
+      "url": "https://arxiv.org/html/2608.14905v3",
+      "checked": [
+        "Abstract, taxonomy outline: existing failure taxonomy"
+      ]
+    },
+    {
+      "id": "JW2016",
+      "title": "Lower Bounds for Protrusion Replacement by Counting Equivalence Classes",
+      "authors": [
+        "Bart M. P. Jansen",
+        "Jules J. H. M. Wulms"
+      ],
+      "doi": "10.4230/LIPIcs.IPEC.2016.17",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.IPEC.2016.17",
+      "checked": [
+        "Publisher metadata, PDF abstract and introduction: existing boundaried equivalence framework"
+      ]
+    },
+    {
+      "id": "HUDSON2026",
+      "authors": [
+        "Scott Hudson"
+      ],
+      "title": "A Paper on Calculating the Height and Relational Complexity of the Primitive Actions of PSL_2(q) and PGL_2(q)",
+      "identifier": "arXiv:2607.20295v1",
+      "url": "https://arxiv.org/pdf/2607.20295",
+      "checked_date_japan": "2026-10-27",
+      "checked": [
+        "Theorems 1.0.1-1.0.2; Borel action in Chapter 4; Theorems 4.3.8 and 4.4.5; term search for Natarajan/Paley"
+      ],
+      "not_claimed": "No full independent audit of the 130-page thesis or all primitive actions"
+    },
+    {
+      "id": "DGhKM2025",
+      "authors": [
+        "Alice Devillers",
+        "Michael Giudici",
+        "Daniel R. Hawtin",
+        "Lukas Klawuhn",
+        "Luke Morgan"
+      ],
+      "title": "Linear dimension of group actions",
+      "identifier": "arXiv:2512.16079v1",
+      "url": "https://arxiv.org/html/2512.16079v1",
+      "checked_date_japan": "2026-10-27",
+      "checked": [
+        "Section 1 definition of linear dimension; Theorem 1.5; term search for Natarajan"
+      ],
+      "not_claimed": "Linear dimension is not identified with Natarajan dimension"
+    },
+    {
+      "id": "GLS2020_2022",
+      "authors": [
+        "Nick Gill",
+        "Bianca Lodà",
+        "Pablo Spiga"
+      ],
+      "title": "On the height and relational complexity of a finite permutation group",
+      "identifier": "arXiv:2005.03942v2; Nagoya Mathematical Journal 246 (2022), 372–411",
+      "doi": "10.1017/nmj.2021.6",
+      "url": "https://arxiv.org/abs/2005.03942",
+      "read_url": "https://pure.southwales.ac.uk/ws/files/5524785/2005.03942.pdf",
+      "checked_date_japan": "2026-10-27",
+      "checked": [
+        "Section 1.1 definitions; inequalities (1.1)-(1.2); term search for Natarajan"
+      ],
+      "not_claimed": "No complete verification of every classification result or cited classical paper"
+    }
+  ],
+  "revision_accessed_date_japan": "2026-10-27",
+  "publication_novelty_recheck_date_japan": "2026-10-27"
+}

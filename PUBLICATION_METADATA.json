@@ -1,0 +1,32 @@
+{
+  "title": "Exact Natarajan Dimension of the Natural PSL(2,q) Action",
+  "version": "1.0",
+  "publication_date": "2026-10-27",
+  "resource_type": "publication-preprint",
+  "repository_url": "https://github.com/yonezaemon1-hub/no42-psl2-natarajan-dimension",
+  "zenodo_reserved_doi": "10.5281/zenodo.23677132",
+  "doi_status_at_preparation": "RESERVED_NOT_REGISTERED",
+  "access": "open",
+  "keywords": [
+    "Natarajan dimension",
+    "PSL(2,q)",
+    "projective line",
+    "finite fields",
+    "Paley graph",
+    "Paley tournament",
+    "learning theory"
+  ],
+  "novelty": "INCONCLUSIVE",
+  "references": "PARTIAL",
+  "peer_review": "not human-peer-reviewed",
+  "review_description": "AI rechecking in another session of the same workflow; not independent third-party confirmation",
+  "creator": {
+    "given_name": "Ryutaro",
+    "family_name": "Yonezu",
+    "name": "Ryutaro Yonezu",
+    "affiliation": "Yonezu Research Lab"
+  },
+  "license": "All rights reserved",
+  "copyright": "Copyright (c) 2026 Ryutaro Yonezu. All rights reserved.",
+  "publication_authorization": "User explicitly approved these author, affiliation, rights, and publication destinations."
+}

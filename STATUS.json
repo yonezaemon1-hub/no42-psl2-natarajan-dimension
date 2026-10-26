@@ -1,0 +1,45 @@
+{
+  "candidate_number": 42,
+  "version": "1.0",
+  "date_japan": "2026-10-27",
+  "title": "Exact Natarajan Dimension of the Natural PSL(2,q) Action",
+  "scope": "natural action on the projective line over every finite field; not all actions of the abstract group",
+  "MODEL": "PASS_AI_RECHECK_REPORTED",
+  "PROOF": "PASS_AI_RECHECK_REPORTED_NOT_THIRD_PARTY_OR_HUMAN_PEER_REVIEW",
+  "COMPUTATION": "PASS_15_FIELDS_9_PRIMES_REPRODUCED_PLUS_USER_SUPPLIED_ADDITIONAL_AUDIT",
+  "REFERENCES": "PARTIAL",
+  "NOVELTY": "INCONCLUSIVE",
+  "RELEASE": "PUBLICATION_AUTHORIZED",
+  "windows_reproduction": "NOT_PERFORMED",
+  "license": "All rights reserved",
+  "claim_exclusions": [
+    "No claim that Natarajan dimension itself is new",
+    "No claim of unrestricted ARC correctness or improved ARC score",
+    "No claim of NAGI or consciousness",
+    "No claim that absence of search hits establishes novelty",
+    "No claim that finite checking proves the infinite theorem"
+  ],
+  "external_additional_computation": {
+    "provenance": "user-supplied independent review; code and raw logs not provided",
+    "prime_q": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17
+    ],
+    "extension_q": [
+      4,
+      8,
+      9,
+      16
+    ],
+    "extension_field_arithmetic_shared_with_package": true
+  },
+  "human_peer_review": "NOT_PERFORMED",
+  "review_scope": "another AI session in the same workflow; not independent third-party confirmation",
+  "review_report_received_date_japan": "2026-10-27",
+  "publication_authorization": "User explicitly approved publication with the stated author, affiliation, and rights."
+}

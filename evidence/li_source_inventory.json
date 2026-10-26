@@ -1,0 +1,169 @@
+{
+  "archive_sha256": "27e89d3ae327d2d4bb90e7d90c38c1e45b800f6f6b05c66dd16044465771d4e8",
+  "files": [
+    {
+      "path": "00README.json",
+      "bytes": 213,
+      "sha256": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5"
+    },
+    {
+      "path": "crefnames.tex",
+      "bytes": 1136,
+      "sha256": "f47ef239fd32a9f7db9a70fe595f103a8407e6aa8136d24b88ae7fbc37e1cd95"
+    },
+    {
+      "path": "figures/hero_paper.pdf",
+      "bytes": 42140,
+      "sha256": "d9de29b01fcf6e42372baf4d7c1565e9e753618ab8990d1bc299ed928b4197bb"
+    },
+    {
+      "path": "macros.tex",
+      "bytes": 2263,
+      "sha256": "c497d4c360c4afc91a979ad94c59fdc0a01fe99ceb68bed977ec0712f0625010"
+    },
+    {
+      "path": "main.bbl",
+      "bytes": 14376,
+      "sha256": "138ea5a8b4ee5bf871214b8aa16de0cbc0d04ae1e869c57f28c08b8750bb9373"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 1804,
+      "sha256": "f7743864aea6d5e0316adee63ab0e0e874e9dabd804b37ff7926315831e4f9fc"
+    },
+    {
+      "path": "preamble.tex",
+      "bytes": 2291,
+      "sha256": "a83e7a4d5ec7ad840faa498ff7b5b14d23cadda9cc764c35318770a50f82a26f"
+    },
+    {
+      "path": "sections/0_abstract.tex",
+      "bytes": 3678,
+      "sha256": "3841970582d52df987289e37ddde684633b2aefd2868d8f3939a0f0769756a2c"
+    },
+    {
+      "path": "sections/1_intro.tex",
+      "bytes": 23615,
+      "sha256": "3e56c5c8277f87b2bde6188557f7bb71094f44cae0501c692082e8be93fbeee4"
+    },
+    {
+      "path": "sections/2_prelim.tex",
+      "bytes": 12668,
+      "sha256": "87adae16c1c7fb447b446a6e424388888c485fef89c6f6c6de9a508da842a1ec"
+    },
+    {
+      "path": "sections/3a_galois.tex",
+      "bytes": 14652,
+      "sha256": "157322007dfa2faefd1de52ba42b68596916ca10e34031b243398cc1f5d9e2ac"
+    },
+    {
+      "path": "sections/3b_erm.tex",
+      "bytes": 16782,
+      "sha256": "da338ee27403e3aa7cdddb922a52c4e9525c5bdd59393ade4732b27c17f25161"
+    },
+    {
+      "path": "sections/3c_fields.tex",
+      "bytes": 8244,
+      "sha256": "024cdb7a9f2ad19791dfa04d46eb1d2c28ba92f591bcc52ba391d89ddcb44e0e"
+    },
+    {
+      "path": "sections/3d_natarajan.tex",
+      "bytes": 12822,
+      "sha256": "37ee1f2b3b000bd40084788b34cba231f48f2585b1c56ba09022bd92dea04519"
+    },
+    {
+      "path": "sections/3e_monodromy.tex",
+      "bytes": 9882,
+      "sha256": "36477648ca3799da0a7fbeb30204d426ded8c3cf18a08e6be4aa202100465759"
+    },
+    {
+      "path": "sections/3f_solvable.tex",
+      "bytes": 15885,
+      "sha256": "5e5d0bcd2a2e06d1a74c19b60c0639985597af02c9cbb93deea0dc0a2e0ef63c"
+    },
+    {
+      "path": "sections/3_results.tex",
+      "bytes": 167,
+      "sha256": "18691dd63a9a892fc40753504dc1aae3abd5d158ff87bc5a4ddc5679cf0c9fee"
+    },
+    {
+      "path": "sections/4_discussion.tex",
+      "bytes": 8656,
+      "sha256": "b75b73a7dc866ce5f6c6d1e59b44a63d0012a70eec54c7582b07cece626c7dd7"
+    },
+    {
+      "path": "sections/9_appendix.tex",
+      "bytes": 251,
+      "sha256": "29ee659ef7db797d8dd7fe144c88f5ae1558d88b3cf5ce89692b188235e8efba"
+    },
+    {
+      "path": "sections/app_0_background.tex",
+      "bytes": 14632,
+      "sha256": "e0830f18bedca109fada1e0fcfb137e8959e164679673026161ee2a4c510d196"
+    },
+    {
+      "path": "sections/app_0_external.tex",
+      "bytes": 11738,
+      "sha256": "e85ff59e51668a855f4c47d0188a57de19be2086df773b89961ee5b753d6d649"
+    },
+    {
+      "path": "sections/app_a_galois.tex",
+      "bytes": 5434,
+      "sha256": "b7979e00e36baf84669e322ca6e9074db3680250b275f86753d14913051fcb9d"
+    },
+    {
+      "path": "sections/app_b_erm.tex",
+      "bytes": 16530,
+      "sha256": "9297bb3b2d0b0de97fc7d93ce396ed127fe1cc05c274cc3d5ea92b9509dff5e1"
+    },
+    {
+      "path": "sections/app_c_fields.tex",
+      "bytes": 6507,
+      "sha256": "fdf6e796bc4b3fbbeeb97df4bd1cb8b7183197e661da33f7bbf69f9f523a6d4b"
+    },
+    {
+      "path": "sections/app_d_natarajan.tex",
+      "bytes": 13524,
+      "sha256": "0ff66f418a078a5f9a6e47b6b8df49300cb28eb8d74a436062e4c2af57953d59"
+    },
+    {
+      "path": "sections/app_e_monodromy.tex",
+      "bytes": 5406,
+      "sha256": "7af548addced9ab7ac2a9276eb9d91bcb9a3aeff537f41e9141ee07fcaada6a3"
+    },
+    {
+      "path": "sections/app_f_solvable.tex",
+      "bytes": 31391,
+      "sha256": "237677b3cff8b6fd3954a672e4d78ce800252c3701b7a29529042b9269d9805b"
+    },
+    {
+      "path": "sections/fig_cosetcube.tex",
+      "bytes": 2873,
+      "sha256": "7890649a78bfb4c6ed85d24417b2a659751910fcaff7ee114f99c28fefebf678"
+    },
+    {
+      "path": "sections/fig_hexagon.tex",
+      "bytes": 2522,
+      "sha256": "7d064b8ab6d62f1bbd6ba3af9156fb2155ce74a50a6d0a1e6691b7d76ace1bef"
+    },
+    {
+      "path": "sections/fig_orthogonality.tex",
+      "bytes": 2992,
+      "sha256": "420914b4f1af76592e5ee37529e72650f3c85cd4dc44f65ed1ad8b5927322a16"
+    },
+    {
+      "path": "sections/fig_quartic.tex",
+      "bytes": 2778,
+      "sha256": "f8bb3934e257eb7a408c47583d7ea2df513ed788e2fb39cbff4efc12a2802c39"
+    },
+    {
+      "path": "theorems.tex",
+      "bytes": 553,
+      "sha256": "791a173e6055dbccac8219bb268a88fb676788539c3b01ff45b36115584d22f5"
+    }
+  ],
+  "source_url": "https://arxiv.org/src/2610.18154v1",
+  "accessed_date_japan": "2026-10-27",
+  "standalone_programs_or_results_datasets_in_submitted_archive": false,
+  "source_files_redistributed": false
+}

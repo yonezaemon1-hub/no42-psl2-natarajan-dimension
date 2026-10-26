@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "independence": "separate source; modular prime arithmetic; det=1 matrices",
+  "fields": [
+    {
+      "q": 2,
+      "SL2_matrix_count": 6,
+      "group_order": 6,
+      "normalized_candidate_triples": 0,
+      "normalized_3_cube_count": 0,
+      "all_cubes_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "q": 3,
+      "SL2_matrix_count": 24,
+      "group_order": 12,
+      "normalized_candidate_triples": 0,
+      "normalized_3_cube_count": 0,
+      "all_cubes_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "q": 5,
+      "SL2_matrix_count": 120,
+      "group_order": 60,
+      "normalized_candidate_triples": 6,
+      "normalized_3_cube_count": 0,
+      "all_cubes_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "q": 7,
+      "SL2_matrix_count": 336,
+      "group_order": 168,
+      "normalized_candidate_triples": 60,
+      "normalized_3_cube_count": 0,
+      "all_cubes_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "q": 11,
+      "SL2_matrix_count": 1320,
+      "group_order": 660,
+      "normalized_candidate_triples": 504,
+      "normalized_3_cube_count": 0,
+      "all_cubes_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "q": 13,
+      "SL2_matrix_count": 2184,
+      "group_order": 1092,
+      "normalized_candidate_triples": 990,
+      "normalized_3_cube_count": 4,
+      "all_cubes_sha256": "b51bd4586cb5fb659731de61b6a1ca26f1e5d2406285644c2e26e4edd9df07f4"
+    },
+    {
+      "q": 17,
+      "SL2_matrix_count": 4896,
+      "group_order": 2448,
+      "normalized_candidate_triples": 2730,
+      "normalized_3_cube_count": 14,
+      "all_cubes_sha256": "f87f747929a14492d29558ed0748bba552db98e6a7cf00e84d6ba5fb3222a8fa"
+    },
+    {
+      "q": 19,
+      "SL2_matrix_count": 6840,
+      "group_order": 3420,
+      "normalized_candidate_triples": 4080,
+      "normalized_3_cube_count": 16,
+      "all_cubes_sha256": "d5e9a4533d30882339318159c7a82bebf8dbafa99c9638be7a2e58c9454832a8"
+    },
+    {
+      "q": 23,
+      "SL2_matrix_count": 12144,
+      "group_order": 6072,
+      "normalized_candidate_triples": 7980,
+      "normalized_3_cube_count": 48,
+      "all_cubes_sha256": "5c752aeaa5b64dd4d264305ef3cf7fbca77546a24867315b815f8c9adc97cae5"
+    }
+  ]
+}
